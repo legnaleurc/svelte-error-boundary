@@ -49,7 +49,7 @@ export function createBoundary(Component) {
 
       super(config);
 
-      this.$$set({ error });
+      this.$set({ error });
     }
   };
 }
