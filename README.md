@@ -1,5 +1,7 @@
 # Svelte Error Boundary
 
+**This repository is forked from [@CrownFramework/svelte-error-boundary](https://github.com/CrownFramework/svelte-error-boundary)**
+
 This package provides a simple error boundary component for Svelte that can be
 can be used with both DOM and SSR targets. The default error boundary component
 provides an optional `onError` callback that can be used to log the error to
@@ -22,14 +24,14 @@ Relevant Svelte issues: [svelte#1096](https://github.com/sveltejs/svelte/issues/
 ## Installation
 
 ```bash
-npm i -D @crownframework/svelte-error-boundary
+npm i -D @legnaleurc/svelte-error-boundary
 ```
 
 ## Use default error boundary
 
 ```svelte
 <script>
-  import { Boundary } from '@crownframework/svelte-error-boundary';
+  import { Boundary } from '@legnaleurc/svelte-error-boundary';
   let a;
 </script>
 
@@ -55,7 +57,7 @@ as inspiration.
 ### CustomBoundary.js
 
 ```js
-import { createBoundary } from '@crownframework/svelte-error-boundary';
+import { createBoundary } from '@legnaleurc/svelte-error-boundary';
 import Component from './CustomBoundaryComponent.svelte';
 export default createBoundary(Component);
 ```
