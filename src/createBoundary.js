@@ -21,7 +21,7 @@ export function createBoundary(Component) {
   function guard(fn, onError) {
     return function guarded(...args) {
       try {
-        return fn(...args);
+        return fn.apply(this, args);
       } catch (err) {
         onError(err);
       }
